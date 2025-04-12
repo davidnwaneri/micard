@@ -7,22 +7,50 @@
 
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
-include: package:flutter_lints/flutter.yaml
+# Additional information about this file can be found at
+
+# https://dart.dev/guides/language/analysis-options
+
+include: package:very_good_analysis/analysis_options.yaml
+
+formatter:
+  page_width: 120
 
 linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at https://dart.dev/lints.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
   rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    lines_longer_than_80_chars: false
+    unnecessary_await_in_return: false
+    public_member_api_docs: false
+    use_setters_to_change_properties: false
+    omit_local_variable_types: false
+    prefer_int_literals: false
+    use_if_null_to_convert_nulls_to_bools: false
+    prefer_single_quotes: false
 
-# Additional information about this file can be found at
+analyzer:
+  errors:
+    lines_longer_than_80_chars: ignore
+    invalid_annotation_target: ignore
+    strict_raw_type: error
+    argument_type_not_assignable: error
+    inference_failure_on_collection_literal: error
+    always_declare_return_types: error
+    collection_methods_unrelated_type: error
+    unrelated_type_equality_checks: error
+    avoid_void_async: error
+    must_be_immutable: error
+    void_checks: error
+    body_might_complete_normally: error
+    body_might_complete_normally_nullable: error
+    unnecessary_null_comparison: error
+    unnecessary_await_in_return: ignore
+    recursive_getters: error
+    unnecessary_statements: error
+    avoid_catches_without_on_clauses: ignore
+    avoid_positional_boolean_parameters: ignore
+
+# For more information about the core and recommended set of lints, see
+# https://dart.dev/go/core-lints
+
+# For additional information about configuring this file, see
 # https://dart.dev/guides/language/analysis-options
