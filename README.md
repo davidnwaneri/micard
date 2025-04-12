@@ -1,6 +1,12 @@
-# micard
+<div align="center">
 
-A new Flutter project.
+<h1>micard</h1>
+
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg?style=for-the-badge)](https://pub.dev/packages/very_good_analysis)
+![Flutter badge](https://img.shields.io/badge/Flutter-informational?style=for-the-badge&logo=flutter&logoColor=00bded&color=015393)
+![Dart badge](https://img.shields.io/badge/Dart-informational?style=for-the-badge&logo=dart&logoColor=2cb7f6&color=03589c)
+
+</div>
 
 ## Getting Started
 
